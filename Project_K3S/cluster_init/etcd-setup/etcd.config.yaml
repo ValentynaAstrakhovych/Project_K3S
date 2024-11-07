@@ -1,0 +1,10 @@
+#### THIS IS EXAMPLE OF THE CONFIG FILE FOR ETCD SETUP ADAPT ACCORDINGLY!!!
+name: 'node1'
+data-dir: '/var/lib/etcd'
+initial-advertise-peer-urls: 'http://192.168.1.1:2380'
+listen-peer-urls: 'http://192.168.1.1:2380'
+listen-client-urls: 'http://192.168.1.1:2379,http://127.0.0.1:2379'
+advertise-client-urls: 'http://192.168.1.1:2379'
+initial-cluster: 'node1=http://192.168.1.1:2380,node2=http://192.168.1.2:2380,node3=http://192.168.1.3:2380'
+initial-cluster-token: 'etcd-cluster-01'
+initial-cluster-state: 'new'
